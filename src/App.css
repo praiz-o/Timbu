@@ -1,0 +1,58 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Flex Container for Product List */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* Center items horizontally */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Flex Item for Product Cards */
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  flex: 1 1 30%;
+  box-sizing: border-box;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}

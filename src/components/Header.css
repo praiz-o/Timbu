@@ -1,0 +1,96 @@
+.header {
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 40px 0px 15px 0px; /* Adjusted padding values */
+    height: 61px;
+    border-bottom: 1px solid #333333; /* Bottom border with color #333333 and 1px width */
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    z-index: 10;
+  }
+  
+
+.logo a {
+    display: block;
+    width: 404.03px;
+    height: 362.03px;
+    background: url('../images/logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 43.18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #A2C662;
+}
+
+.icons {
+    display: flex;
+    gap: 72.51px;
+    align-items: center;
+}
+
+.icons button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 23.02px;
+    align-items: center;
+}
+
+
+.auth-buttons span {
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+}
+/* Header.css */
+
+.cart-button {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+/* Header.css */
+
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cart-button.highlight {
+    animation: highlight 0.3s ease;
+}

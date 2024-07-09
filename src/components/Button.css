@@ -1,0 +1,61 @@
+/* Default styles */
+.buttons .primary-button {
+  display: flex;
+  width: 253px;
+  height: 76px;
+  align-items: center;
+  padding: 12.6px 25.2px;
+  position: relative;
+  background-color: #163b5c;
+  color: white;
+  border-radius: 8.4px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.buttons .primary-button:hover {
+  background-color: transparent;
+  color: #163b5c;
+}
+
+.buttons .signup-button {
+  display: flex;
+  width: 140px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 5px;
+  position: relative;
+  background-color: #153a5c;
+  border-radius: 10px;
+  border: 2px solid #163b5c;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons .signup-button:hover {
+  background-color: transparent;
+  color: #163b5c;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .buttons .primary-button {
+    width: 50%; /* Full width on smaller screens */
+    max-width: 200px; /* Limit maximum width */
+    height: 56px; /* Adjusted height for smaller screens */
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 8px;
+    text-align: center; /* Center text vertically */
+  }
+
+  .buttons .signup-button {
+    width: 50%; /* Full width on smaller screens */
+    max-width: 10px; /* Limit maximum width */
+    height: 45px; /* Adjusted height for smaller screens */
+    padding: 8px 1px; /* Reduced padding */
+    border-radius: 10px;
+    text-align: center; /* Center text vertically */
+  }
+}
